@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link rel="stylesheet" href="./assets/style/all.css" />
+        <title>outlet-info</title>
+    </head>
+
+    <body>
+        <header class="bg-primary-light py-4 lg:py-3 sticky top-0">
+            <div class="container">
+                <div class="flex items-center justify-between">
+                    <a href="./index.html">
+                        <img
+                            src="./assets/images/logo-white.png"
+                            alt="glasses logo"
+                            class="w-20"
+                        />
+                    </a>
+                    <ul class="hidden gap-16 text-white lg:flex">
+                        <li>
+                            <a
+                                href="./optical.html"
+                                class="block border-b-2 border-transparent text-[1.25rem] hover:border-white"
+                                >系列鏡框</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./outlets.html"
+                                class="block border-b-2 border-transparent text-[1.25rem] hover:border-white"
+                                >門市據點</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./blog.html"
+                                class="block border-b-2 border-transparent text-[1.25rem] hover:border-white"
+                                >部落格</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./faq.html"
+                                class="block border-b-2 border-transparent text-[1.25rem] hover:border-white"
+                                >常見問題</a
+                            >
+                        </li>
+                    </ul>
+                    <button type="button" class="text-white lg:hidden" id="mobile-menu-btn">
+                        <span
+                            class="material-symbols-outlined block text-[1.25rem]"
+                        >
+                            menu
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <dialog class="dialog m-0 relative p-0 bg-primary-light w-full text-white h-full max-h-full top-0 left-0 bottom-0  max-w-[250px]" id="dialog">
+            <button type="button" id="close-btn" class="absolute top-6 right-6">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </button>
+           <ul class="dialog-menu w-full h-full grid place-content-center duration-300 transition-transform -translate-x-full" id="mobile-menu-list">
+            <li><a href="#">hello world</a></li>
+           </ul>
+        </dialog>
+
+        
+
+        <main>
+            
+<div class="pt-10 pb-16">
+    <div class="container">
+        <div class="mb-6">
+            <h1
+                class="mb-6 border-l-8 border-[#9F1213] pl-4 text-[1.5rem] font-bold"
+            >
+                門市據點
+            </h1>
+            <div class="flex items-center gap-2">
+                <p>選擇地區</p>
+                <select
+                    name="outlets location"
+                    id="outlets location"
+                    class="text-[18[px] max-w-[304px] grow border border-[#CED4DA] bg-transparent px-3 py-[6px]"
+                >
+                    <option value="台北市">台北市</option>
+                    <option value="台中市">台中市</option>
+                    <option value="高雄市">高雄市</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+                <img src="./assets/images/store-1.png" class="h-full w-full" />
+                <div class="border border-[#00000020]">
+                    <h2
+                        class="border-b border-[#00000020] py-2 px-6 text-[1.5rem]"
+                    >
+                        台北中山旗艦店
+                    </h2>
+                    <ul class="space-y-2 px-6 py-4">
+                        <li class="flex gap-2">
+                            <span class="material-symbols-outlined mt-[3px]">
+                                call
+                            </span>
+                            <p class="text-[1.25rem]">電話：(02)000-1234</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="material-symbols-outlined mt-[3px]">
+                                schedule
+                            </span>
+                            <p class="text-[1.25rem]">營業時間：10:00-21:00</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="material-symbols-outlined mt-[3px]">
+                                location_on
+                            </span>
+                            <p class="text-[1.25rem]">
+                                地址：台北市中山區南京東路25巷2-1號
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25476.172899615834!2d120.4965952767186!3d22.75627414687441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04fd209f4835%3A0x54511e7d86c87c09!2sKaohsiung%2C%20Gushan%20District%2C%20Kaohsiung%20City%2C%20Taiwan!5e0!3m2!1sen!2smy!4v1659718886984!5m2!1sen!2smy"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="h-full min-h-[208px] w-full md:min-h-[414px]"
+            ></iframe>
+            <!-- class="min-h-[208px] w-full md:min-h-[414px]" -->
+        </div>
+    </div>
+</div>
+ 
+        </main>
+
+        <footer
+            class="bg-primary-light py-6 md:pt-14 md:pb-10 lg:pt-[3.75rem] lg:pb-8"
+        >
+            <div class="container">
+                <div
+                    class="mb-4 flex justify-between border-b border-white pb-6 md:mb-8 md:pb-8"
+                >
+                    <div class="text-white">
+                        <!-- footer nav -->
+                        <ul class="hidden gap-12 md:mb-8 md:flex">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="border-b-2 border-transparent text-white hover:border-white"
+                                    >首頁</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./optical.html"
+                                    class="border-b-2 border-transparent text-white hover:border-white"
+                                    >系列鏡框</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./outlets.html"
+                                    class="border-b-2 border-transparent text-white hover:border-white"
+                                    >門市據點</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./blog.html"
+                                    class="border-b-2 border-transparent text-white hover:border-white"
+                                    >部落格</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./faq.html"
+                                    class="border-b-2 border-transparent text-white hover:border-white"
+                                    >常見問題</a
+                                >
+                            </li>
+                        </ul>
+
+                        <!-- footer contacts: phone & emails -->
+                        <div class="mb-2 flex items-center gap-4">
+                            <span
+                                class="material-symbols-outlined text-[1.5rem] md:text-[3rem]"
+                            >
+                                call
+                            </span>
+                            <a href="#" class="md:text-[2.25rem]"
+                                >0800-000-000</a
+                            >
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="material-symbols-outlined text-[1.5rem] md:text-[3rem]"
+                            >
+                                mail
+                            </span>
+                            <a href="#" class="md:text-[2.25rem]"
+                                >glasses@business.com</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- footer social icons -->
+                    <ul class="flex gap-4">
+                        <li>
+                            <a
+                                href="#"
+                                class="transition-transform duration-[400] hover:-translate-y-1"
+                            >
+                                <img
+                                    src="./assets/images/ic_social_fb.png"
+                                    alt="facebook"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="transition-transform duration-[400] hover:-translate-y-1"
+                            >
+                                <img
+                                    src="./assets/images/ic_social_ig.png"
+                                    alt="instagram"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="transition-transform duration-[400] hover:-translate-y-1"
+                            >
+                                <img
+                                    src="./assets/images/ic_social_line.png"
+                                    alt="line"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="flex flex-col gap-2 text-white md:flex-row md:justify-between"
+                >
+                    <p>Copyright © 2020 Glasses.All rights reserved.</p>
+                    <div class="space-x-2">
+                        <a
+                            href="#"
+                            class="border-b-2 border-transparent hover:border-white"
+                            >隱私權政策</a
+                        ><a
+                            href="#"
+                            class="border-b-2 border-transparent hover:border-white"
+                            >隱私權政策</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+    </body>
+</html>
