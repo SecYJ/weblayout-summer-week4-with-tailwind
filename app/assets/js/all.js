@@ -13,7 +13,7 @@ btn.addEventListener("click", (e) => {
 const closeDialog = (e) => {
     if (e.target.closest("#close-btn") || e.target.id === "dialog") {
         dialog.close();
-        dialog.classList.remove("show");
+        mobileMenuList.classList.remove("show");
     }
 };
 
