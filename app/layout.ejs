@@ -70,13 +70,13 @@
             </div>
         </header>
 
-        <dialog class="dialog p-0 bg-primary-light w-full transition-transform duration-300 text-white h-full grid place-content-center max-h-full top-0 left-0 bottom-0 -translate-x-full max-w-[250px]" id="dialog">
-            <button type="button" id="close-btn">
+        <dialog class="dialog m-0 relative p-0 bg-primary-light w-full text-white h-full max-h-full top-0 left-0 bottom-0  max-w-[250px]" id="dialog">
+            <button type="button" id="close-btn" class="absolute top-6 right-6">
                 <span class="material-symbols-outlined">
                     close
                     </span>
             </button>
-           <ul class="">
+           <ul class="dialog-menu w-full h-full grid place-content-center duration-300 transition-transform -translate-x-full" id="mobile-menu-list">
             <li><a href="#">hello world</a></li>
            </ul>
         </dialog>

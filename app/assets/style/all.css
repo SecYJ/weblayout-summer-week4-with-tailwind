@@ -42,12 +42,8 @@
         @apply pointer-events-auto translate-x-0;
     }
 
-    .dialog {
-        margin: 0;
-    }
-
-    .dialog:modal {
-        /* background-color: blue; */
+    .dialog-menu.show {
+        @apply pointer-events-auto translate-x-0;
     }
 
     .overflow {
