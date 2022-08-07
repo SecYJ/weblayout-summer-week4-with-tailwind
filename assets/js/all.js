@@ -20,7 +20,7 @@ btn.addEventListener("click", function (e) {
 var closeDialog = function closeDialog(e) {
   if (e.target.closest("#close-btn") || e.target.id === "dialog") {
     dialog.close();
-    dialog.classList.remove("show");
+    mobileMenuList.classList.remove("show");
   }
 };
 
