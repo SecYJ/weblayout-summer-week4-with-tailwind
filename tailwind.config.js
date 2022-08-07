@@ -8,6 +8,10 @@ module.exports = {
                     dark: "#650300",
                 },
                 accent: "#FBF2F2",
+                brown: {
+                    light: "#5F3E2D",
+                    dark: "#B75929",
+                },
             },
         },
         container: {
@@ -17,6 +21,7 @@ module.exports = {
         screens: {
             md: "768px",
             lg: "1024px",
+            xl: "1280px",
         },
     },
     plugins: [
