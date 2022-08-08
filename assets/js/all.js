@@ -11,9 +11,9 @@ var closeBtn = document.querySelector("#close-btn");
 var dialog = document.querySelector("#dialog");
 var mobileMenuList = document.querySelector("#mobile-menu-list");
 btn.addEventListener("click", function (e) {
-  // document.body.classList.add("overflow");
   e.stopPropagation();
   dialog.showModal();
+  dialog.classList.add("show");
   mobileMenuList.classList.add("show");
 });
 
@@ -30,8 +30,6 @@ var config = {
 };
 
 var callback = function callback(mutations) {
-  console.log(mutations);
-
   var _iterator = _createForOfIteratorHelper(mutations),
       _step;
 
@@ -45,11 +43,8 @@ var callback = function callback(mutations) {
         return;
       }
 
-      document.addEventListener("click", closeDialog); // console.log(target.getAttributes("open"));
-    } // const { target } = mutations;
-    // console.log(target);
-    // if (target.classList.includes("show") && target.getAttributes("show"))
-
+      document.addEventListener("click", closeDialog);
+    }
   } catch (err) {
     _iterator.e(err);
   } finally {

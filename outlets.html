@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <header class="bg-primary-light py-4 lg:py-3 sticky top-0">
+        <header class="sticky top-0 z-10 bg-primary-light py-4 lg:py-3">
             <div class="container">
                 <div class="flex items-center justify-between">
                     <a href="./index.html">
@@ -59,9 +59,13 @@
                             >
                         </li>
                     </ul>
-                    <button type="button" class="text-white lg:hidden" id="mobile-menu-btn">
+                    <button
+                        type="button"
+                        class="text-white lg:hidden"
+                        id="mobile-menu-btn"
+                    >
                         <span
-                            class="material-symbols-outlined block text-[1.25rem]"
+                            class="material-symbols-outlined block text-[2.5rem]"
                         >
                             menu
                         </span>
@@ -70,18 +74,28 @@
             </div>
         </header>
 
-        <dialog class="dialog m-0 relative p-0 bg-primary-light w-full text-white h-full max-h-full top-0 left-0 bottom-0  max-w-[250px]" id="dialog">
-            <button type="button" id="close-btn" class="absolute top-6 right-6 z-10">
-                <span class="material-symbols-outlined">
+        <dialog
+            class="dialog pointer-events-none fixed inset-0 top-0 left-0 bottom-0 m-0 h-full max-h-full w-full max-w-[250px] bg-primary-light p-0 text-white"
+            id="dialog"
+        >
+            <button
+                type="button"
+                id="close-btn"
+                class="absolute top-6 right-6 z-10"
+            >
+                <span class="material-symbols-outlined text-[2.5rem]">
                     close
-                    </span>
+                </span>
             </button>
-           <ul class="dialog-menu w-full text-xl space-y-4 h-full grid place-content-center duration-300 transition-transform -translate-x-full" id="mobile-menu-list">
-            <li><a href="./optical.html">系列鏡框</a></li>
-            <li><a href="./outlets.html">門市據點</a></li>
-            <li><a href="./blog.html">部落格</a></li>
-            <li><a href="./faq.html">常見問題</a></li>
-           </ul>
+            <ul
+                class="dialog-menu grid h-full w-full -translate-x-full place-content-center space-y-4 text-xl transition-transform duration-300"
+                id="mobile-menu-list"
+            >
+                <li><a href="./optical.html">系列鏡框</a></li>
+                <li><a href="./outlets.html">門市據點</a></li>
+                <li><a href="./blog.html">部落格</a></li>
+                <li><a href="./faq.html">常見問題</a></li>
+            </ul>
         </dialog>
 
         
@@ -101,7 +115,7 @@
                 <select
                     name="outlets location"
                     id="outlets location"
-                    class="text-[18[px] grow border border-[#CED4DA] bg-transparent px-3 py-[6px]"
+                    class="text-[18[px] grow border border-[#CED4DA] bg-transparent px-3 py-[6px] md:max-w-[304px]"
                 >
                     <option value="台北市">台北市</option>
                     <option value="台中市">台中市</option>
@@ -114,12 +128,11 @@
             class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-12"
         >
             <li class="">
-                <div class="min-h-[224px] overflow-hidden">
-                    <img
-                        src="./assets/images/store-2.png"
-                        class="w-full transition-transform duration-200 hover:scale-150"
-                    />
-                </div>
+                <img
+                    src="./assets/images/store-2.png"
+                    class="w-full"
+                    alt="台北中山旗艦店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
@@ -154,11 +167,15 @@
                 >
             </li>
             <li>
-                <img src="./assets/images/store-3.png" class="w-full" />
+                <img
+                    src="./assets/images/store-3.png"
+                    class="w-full"
+                    alt="台北綠園店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    台北綠園店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
@@ -178,7 +195,7 @@
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：台北市中正區復興南路 132-1 號
                         </p>
                     </li>
                 </ul>
@@ -189,11 +206,15 @@
                 >
             </li>
             <li>
-                <img src="./assets/images/store-4.png" class="w-full" />
+                <img
+                    src="./assets/images/store-4.png"
+                    class="w-full"
+                    alt="地址：台中市清水區經南一路 23 號 8 樓门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    台中清水旗艦店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
@@ -213,7 +234,7 @@
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：台中市清水區經南一路 23 號 8 樓
                         </p>
                     </li>
                 </ul>
@@ -224,18 +245,22 @@
                 >
             </li>
             <li>
-                <img src="./assets/images/store-4.png" class="w-full" />
+                <img
+                    src="./assets/images/store-4.png"
+                    class="w-full"
+                    alt="高雄中正形象店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    高雄中正形象店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
                             call
                         </span>
-                        <p class="text-[1.25rem]">電話：(02)000-1234</p>
+                        <p class="text-[1.25rem]">電話：(07)000-2345</p>
                     </li>
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
@@ -248,7 +273,7 @@
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：高雄市苓雅區中正路 38 號 12 樓
                         </p>
                     </li>
                 </ul>
@@ -259,18 +284,22 @@
                 >
             </li>
             <li>
-                <img src="./assets/images/store-5.png" class="w-full" />
+                <img
+                    src="./assets/images/store-5.png"
+                    class="w-full"
+                    alt="高雄夢時代店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    高雄夢時代店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
                             call
                         </span>
-                        <p class="text-[1.25rem]">電話：(02)000-1234</p>
+                        <p class="text-[1.25rem]">電話：(07)000-1234</p>
                     </li>
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
@@ -283,7 +312,7 @@
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：高雄市前鎮區中華一路 63 號 6 樓
                         </p>
                     </li>
                 </ul>
@@ -379,7 +408,7 @@
                                 <img
                                     src="./assets/images/ic_social_fb.png"
                                     alt="facebook"
-                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12"
                                 />
                             </a>
                         </li>
@@ -391,7 +420,7 @@
                                 <img
                                     src="./assets/images/ic_social_ig.png"
                                     alt="instagram"
-                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12"
                                 />
                             </a>
                         </li>
@@ -403,7 +432,7 @@
                                 <img
                                     src="./assets/images/ic_social_line.png"
                                     alt="line"
-                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12"
                                 />
                             </a>
                         </li>
@@ -413,7 +442,9 @@
                     class="flex flex-col gap-2 text-white md:flex-row md:justify-between"
                 >
                     <p>Copyright © 2020 Glasses.All rights reserved.</p>
-                    <div class="space-x-2">
+                    <div
+                        class="flex flex-col items-start gap-2 md:flex-row md:gap-12"
+                    >
                         <a
                             href="#"
                             class="border-b-2 border-transparent hover:border-white"

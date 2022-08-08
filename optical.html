@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <header class="bg-primary-light py-4 lg:py-3 sticky top-0">
+        <header class="sticky top-0 z-10 bg-primary-light py-4 lg:py-3">
             <div class="container">
                 <div class="flex items-center justify-between">
                     <a href="./index.html">
@@ -59,9 +59,13 @@
                             >
                         </li>
                     </ul>
-                    <button type="button" class="text-white lg:hidden" id="mobile-menu-btn">
+                    <button
+                        type="button"
+                        class="text-white lg:hidden"
+                        id="mobile-menu-btn"
+                    >
                         <span
-                            class="material-symbols-outlined block text-[1.25rem]"
+                            class="material-symbols-outlined block text-[2.5rem]"
                         >
                             menu
                         </span>
@@ -70,18 +74,28 @@
             </div>
         </header>
 
-        <dialog class="dialog m-0 relative p-0 bg-primary-light w-full text-white h-full max-h-full top-0 left-0 bottom-0  max-w-[250px]" id="dialog">
-            <button type="button" id="close-btn" class="absolute top-6 right-6 z-10">
-                <span class="material-symbols-outlined">
+        <dialog
+            class="dialog pointer-events-none fixed inset-0 top-0 left-0 bottom-0 m-0 h-full max-h-full w-full max-w-[250px] bg-primary-light p-0 text-white"
+            id="dialog"
+        >
+            <button
+                type="button"
+                id="close-btn"
+                class="absolute top-6 right-6 z-10"
+            >
+                <span class="material-symbols-outlined text-[2.5rem]">
                     close
-                    </span>
+                </span>
             </button>
-           <ul class="dialog-menu w-full text-xl space-y-4 h-full grid place-content-center duration-300 transition-transform -translate-x-full" id="mobile-menu-list">
-            <li><a href="./optical.html">系列鏡框</a></li>
-            <li><a href="./outlets.html">門市據點</a></li>
-            <li><a href="./blog.html">部落格</a></li>
-            <li><a href="./faq.html">常見問題</a></li>
-           </ul>
+            <ul
+                class="dialog-menu grid h-full w-full -translate-x-full place-content-center space-y-4 text-xl transition-transform duration-300"
+                id="mobile-menu-list"
+            >
+                <li><a href="./optical.html">系列鏡框</a></li>
+                <li><a href="./outlets.html">門市據點</a></li>
+                <li><a href="./blog.html">部落格</a></li>
+                <li><a href="./faq.html">常見問題</a></li>
+            </ul>
         </dialog>
 
         
@@ -89,9 +103,7 @@
         <main>
             
 <div class="container">
-    <ul
-        class="grid grid-cols-3 divide-x divide-[#DCDCDC] text-center uppercase"
-    >
+    <ul class="grid grid-cols-3 text-center uppercase">
         <li class="relative border-y border-l border-[#dcdcdc]">
             <a
                 href="#"
@@ -100,7 +112,7 @@
                 optical
             </a>
         </li>
-        <li class="relative border-y border-[#dcdcdc]">
+        <li class="relative border-y border-x border-[#dcdcdc]">
             <a
                 href="./sunglasses.html"
                 class="fw-medium product-nav-underline block py-4 hover:after:bg-primary-light md:text-[1.5rem] lg:py-6 lg:text-[2rem]"
@@ -377,42 +389,42 @@
             <div class="container">
                 <ul class="pagination mb-16 flex justify-center text-[#555]">
                     <li
-                        class="border border-transparent transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
+                        class="cursor-pointer border border-transparent px-4 py-3 transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
                     >
-                        <a href="#" class="px-4 py-3">上一頁</a>
+                        <a href="#" class="">上一頁</a>
                     </li>
                     <li
-                        class="border border-transparent transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
+                        class="cursor-pointer border border-transparent px-4 py-3 transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
                     >
-                        <a href="#" class="px-4 py-3">1</a>
+                        <a href="#">1</a>
                     </li>
                     <li class="border border-black bg-black text-white">
                         <a href="#" class="px-4 py-3">2</a>
                     </li>
                     <li
-                        class="border border-transparent transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
+                        class="cursor-pointer border border-transparent px-4 py-3 transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
                     >
-                        <a href="#" class="px-4 py-3">3</a>
+                        <a href="#">3</a>
                     </li>
                     <li
-                        class="border border-transparent transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
+                        class="cursor-pointer border border-transparent px-4 py-3 transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
                     >
-                        <a href="#" class="px-4 py-3">4</a>
+                        <a href="#">4</a>
                     </li>
                     <li
-                        class="border border-transparent transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
+                        class="cursor-pointer border border-transparent px-4 py-3 transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
                     >
-                        <a href="#" class="px-4 py-3">5</a>
+                        <a href="#">5</a>
                     </li>
                     <li
-                        class="border border-transparent transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
+                        class="cursor-pointer border border-transparent px-4 py-3 transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
                     >
-                        <a href="#" class="px-4 py-3">6</a>
+                        <a href="#">6</a>
                     </li>
                     <li
-                        class="border border-transparent transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
+                        class="cursor-pointer border border-transparent px-4 py-3 transition-colors duration-200 hover:border-black hover:bg-black hover:text-white"
                     >
-                        <a href="#" class="px-4 py-3">下一頁</a>
+                        <a href="#">下一頁</a>
                     </li>
                 </ul>
             </div>
@@ -499,7 +511,7 @@
                                 <img
                                     src="./assets/images/ic_social_fb.png"
                                     alt="facebook"
-                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12"
                                 />
                             </a>
                         </li>
@@ -511,7 +523,7 @@
                                 <img
                                     src="./assets/images/ic_social_ig.png"
                                     alt="instagram"
-                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12"
                                 />
                             </a>
                         </li>
@@ -523,7 +535,7 @@
                                 <img
                                     src="./assets/images/ic_social_line.png"
                                     alt="line"
-                                    class="h-6 w-6 md:h-10 md:w-10 lg:w-12 lg:h-12"
+                                    class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12"
                                 />
                             </a>
                         </li>
@@ -533,7 +545,9 @@
                     class="flex flex-col gap-2 text-white md:flex-row md:justify-between"
                 >
                     <p>Copyright © 2020 Glasses.All rights reserved.</p>
-                    <div class="space-x-2">
+                    <div
+                        class="flex flex-col items-start gap-2 md:flex-row md:gap-12"
+                    >
                         <a
                             href="#"
                             class="border-b-2 border-transparent hover:border-white"
