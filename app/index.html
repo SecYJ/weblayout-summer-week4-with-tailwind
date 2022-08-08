@@ -1,12 +1,12 @@
 ---
-title: 首頁
+title: Home
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
 <section
-    class="grid min-h-[396px] items-center bg-[url('../images/banner.png')] bg-cover bg-center md:min-h-[787px]"
+    class="grid min-h-[396px] items-center bg-[url('../images/banner-sm.png')] bg-cover bg-center md:min-h-[787px] md:bg-[url('../images/banner.png')]"
 >
     <div class="container">
         <div class="text-right">
@@ -19,8 +19,8 @@ current: index
                 看得清，才能看得遠
             </h1>
             <a
-                href="#"
-                class="bg-primary-light py-[6px] px-3 text-[1.25rem] font-medium text-white"
+                href="./optical.html"
+                class="bg-primary-light py-[6px] px-3 text-[1.25rem] font-medium text-white hover:bg-primary-dark"
                 >立即購買</a
             >
         </div>
@@ -223,7 +223,7 @@ current: index
             <li class="card-shadow rounded-[.25rem]">
                 <img
                     src="../assets/images/home-section5-2.png"
-                    alt="Jessy is showing off her glass under the sun!"
+                    alt="Kate said this is the best glass that she ever use!!!"
                     class="w-full"
                 />
                 <div class="flex min-h-[205px] flex-col p-4">
@@ -237,7 +237,7 @@ current: index
             <li class="card-shadow rounded-[.25rem]">
                 <img
                     src="../assets/images/home-section5-3.png"
-                    alt="Jessy is showing off her glass under the sun!"
+                    alt="YouYou strongly recommends this shop because great customer service by us."
                     class="w-full"
                 />
                 <div class="flex min-h-[205px] flex-col p-4">
@@ -251,7 +251,7 @@ current: index
             <li class="card-shadow rounded-[.25rem]">
                 <img
                     src="../assets/images/home-section5-4.png"
-                    alt="Jessy is showing off her glass under the sun!"
+                    alt="One of the greatest quality glass that I have use ever since by Kyuan"
                     class="w-full"
                 />
                 <div class="flex min-h-[205px] flex-col p-4">
@@ -330,7 +330,7 @@ current: index
 
             <button
                 type="submit"
-                class="mx-auto block w-1/2 bg-primary-light py-4 font-bold text-white lg:w-1/3"
+                class="mx-auto block w-full bg-primary-light py-4 font-bold text-white transition-colors duration-150 hover:bg-primary-dark md:w-3/5 lg:w-4/6"
             >
                 確認送出
             </button>

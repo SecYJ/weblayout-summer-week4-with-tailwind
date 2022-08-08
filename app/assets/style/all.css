@@ -39,15 +39,10 @@
     }
 
     .dialog.show {
-        @apply pointer-events-auto translate-x-0;
+        @apply pointer-events-auto;
     }
 
     .dialog-menu.show {
-        @apply pointer-events-auto translate-x-0;
-    }
-
-    .overflow {
-        overflow: hidden;
-        padding-right: 17px;
+        @apply translate-x-0;
     }
 }

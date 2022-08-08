@@ -1,23 +1,25 @@
 ---
-title: outlet-info
+title: Outlet-info
 engine: ejs
 layout: ./app/layout.ejs
 ---
 
 <div class="pt-10 pb-16">
     <div class="container">
-        <div class="mb-6">
+        <div class="mb-6 md:mb-10">
             <h1
-                class="mb-6 border-l-8 border-[#9F1213] pl-4 text-[1.5rem] font-bold"
+                class="mb-6 border-l-8 border-[#9F1213] pl-4 text-[1.5rem] font-bold md:mb-8 md:text-[3rem]"
             >
                 門市據點
             </h1>
-            <div class="flex items-center gap-2">
-                <p>選擇地區</p>
+            <div class="flex items-center gap-2 md:gap-4">
+                <label for="outlets-location" class="md:text-[1.5rem]"
+                    >選擇地區</label
+                >
                 <select
                     name="outlets location"
-                    id="outlets location"
-                    class="text-[18[px] max-w-[304px] grow border border-[#CED4DA] bg-transparent px-3 py-[6px]"
+                    id="outlets-location"
+                    class="max-w-[304px] grow border border-[#CED4DA] bg-transparent px-3 py-[6px] text-[18px] text-[#495057]"
                 >
                     <option value="台北市">台北市</option>
                     <option value="台中市">台中市</option>
@@ -67,7 +69,6 @@ layout: ./app/layout.ejs
                 referrerpolicy="no-referrer-when-downgrade"
                 class="h-full min-h-[208px] w-full md:min-h-[414px]"
             ></iframe>
-            <!-- class="min-h-[208px] w-full md:min-h-[414px]" -->
         </div>
     </div>
 </div>

@@ -17,7 +17,7 @@ layout: ./app/layout.ejs
                 <select
                     name="outlets location"
                     id="outlets location"
-                    class="text-[18[px] grow border border-[#CED4DA] bg-transparent px-3 py-[6px]"
+                    class="text-[18[px] grow border border-[#CED4DA] bg-transparent px-3 py-[6px] md:max-w-[304px]"
                 >
                     <option value="台北市">台北市</option>
                     <option value="台中市">台中市</option>
@@ -30,12 +30,11 @@ layout: ./app/layout.ejs
             class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-12"
         >
             <li class="">
-                <div class="min-h-[224px] overflow-hidden">
-                    <img
-                        src="./assets/images/store-2.png"
-                        class="w-full transition-transform duration-200 hover:scale-150"
-                    />
-                </div>
+                <img
+                    src="./assets/images/store-2.png"
+                    class="w-full"
+                    alt="台北中山旗艦店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
@@ -70,11 +69,15 @@ layout: ./app/layout.ejs
                 >
             </li>
             <li>
-                <img src="./assets/images/store-3.png" class="w-full" />
+                <img
+                    src="./assets/images/store-3.png"
+                    class="w-full"
+                    alt="台北綠園店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    台北綠園店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
@@ -94,7 +97,7 @@ layout: ./app/layout.ejs
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：台北市中正區復興南路 132-1 號
                         </p>
                     </li>
                 </ul>
@@ -105,11 +108,15 @@ layout: ./app/layout.ejs
                 >
             </li>
             <li>
-                <img src="./assets/images/store-4.png" class="w-full" />
+                <img
+                    src="./assets/images/store-4.png"
+                    class="w-full"
+                    alt="地址：台中市清水區經南一路 23 號 8 樓门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    台中清水旗艦店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
@@ -129,7 +136,7 @@ layout: ./app/layout.ejs
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：台中市清水區經南一路 23 號 8 樓
                         </p>
                     </li>
                 </ul>
@@ -140,18 +147,22 @@ layout: ./app/layout.ejs
                 >
             </li>
             <li>
-                <img src="./assets/images/store-4.png" class="w-full" />
+                <img
+                    src="./assets/images/store-4.png"
+                    class="w-full"
+                    alt="高雄中正形象店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    高雄中正形象店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
                             call
                         </span>
-                        <p class="text-[1.25rem]">電話：(02)000-1234</p>
+                        <p class="text-[1.25rem]">電話：(07)000-2345</p>
                     </li>
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
@@ -164,7 +175,7 @@ layout: ./app/layout.ejs
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：高雄市苓雅區中正路 38 號 12 樓
                         </p>
                     </li>
                 </ul>
@@ -175,18 +186,22 @@ layout: ./app/layout.ejs
                 >
             </li>
             <li>
-                <img src="./assets/images/store-5.png" class="w-full" />
+                <img
+                    src="./assets/images/store-5.png"
+                    class="w-full"
+                    alt="高雄夢時代店门市"
+                />
                 <h2
                     class="border border-b-0 border-[#00000020] px-6 py-2 text-[1.5rem]"
                 >
-                    台北中山旗艦店
+                    高雄夢時代店
                 </h2>
                 <ul class="space-y-2 border border-[#00000020] px-6 py-4">
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
                             call
                         </span>
-                        <p class="text-[1.25rem]">電話：(02)000-1234</p>
+                        <p class="text-[1.25rem]">電話：(07)000-1234</p>
                     </li>
                     <li class="flex gap-2">
                         <span class="material-symbols-outlined mt-[3px]">
@@ -199,7 +214,7 @@ layout: ./app/layout.ejs
                             location_on
                         </span>
                         <p class="text-[1.25rem]">
-                            地址：台北市中山區南京東路25巷2-1號
+                            地址：高雄市前鎮區中華一路 63 號 6 樓
                         </p>
                     </li>
                 </ul>
