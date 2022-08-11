@@ -487,14 +487,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(170 6 1 / var(--tw-bg-opacity));
 }
-.pagination li {
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(85 85 85 / var(--tw-border-opacity));
-}
-.pagination li:not(:last-child) {
-  border-right-width: 0px;
-}
 .dialog::-webkit-backdrop {
         background-color: rgb(0 0 0 / 0.75);
     }
@@ -590,6 +582,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-16 {
   margin-bottom: 4rem;
 }
+.-ml-px {
+  margin-left: -1px;
+}
 .mt-\[3px\] {
   margin-top: 3px;
 }
@@ -668,9 +663,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
       -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.cursor-pointer {
-  cursor: pointer;
 }
 .resize-none {
   resize: none;
@@ -769,8 +761,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-divide-opacity: 1;
   border-color: rgb(220 220 220 / var(--tw-divide-opacity));
 }
-.rounded-\[\.25rem\] {
-  border-radius: .25rem;
+.rounded {
+  border-radius: 0.25rem;
 }
 .border {
   border-width: 1px;
@@ -815,6 +807,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-gray-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(85 85 85 / var(--tw-border-opacity));
 }
 .border-white {
   --tw-border-opacity: 1;
@@ -892,13 +888,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-0 {
   padding: 0px;
 }
-.py-\[6px\] {
-  padding-top: 6px;
-  padding-bottom: 6px;
+.p-2 {
+  padding: 0.5rem;
+}
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
 }
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .py-10 {
   padding-top: 2.5rem;
@@ -908,6 +911,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -915,10 +922,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-\[13px\] {
   padding-top: 13px;
   padding-bottom: 13px;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -1018,17 +1021,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(170 6 1 / var(--tw-text-opacity));
 }
-.text-\[\#555\] {
+.text-gray-light {
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 .text-primary-dark {
   --tw-text-opacity: 1;
   color: rgb(101 3 0 / var(--tw-text-opacity));
-}
-.text-\[\#555555\] {
-  --tw-text-opacity: 1;
-  color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1085,6 +1084,17 @@ Ensure the default browser behavior of the `hidden` attribute.
        -o-transition-duration: 150ms;
           transition-duration: 150ms;
 }
+.transition-opacity {
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+       -o-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
 .duration-200 {
   -webkit-transition-duration: 200ms;
        -o-transition-duration: 200ms;
@@ -1104,6 +1114,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-transition-duration: 300ms;
        -o-transition-duration: 300ms;
           transition-duration: 300ms;
+}
+.duration-100 {
+  -webkit-transition-duration: 100ms;
+       -o-transition-duration: 100ms;
+          transition-duration: 100ms;
+}
+.product-nav-underline::after {
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  display: block;
+  height: 0.5rem;
+  width: 100%;
+  content: var(--tw-content);
+  background-color: transparent;
 }
 .\[grid-template-columns\:min-content\] {
   grid-template-columns: -webkit-min-content;
@@ -1137,6 +1162,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.hover\:opacity-80:hover {
+  opacity: 0.8;
 }
 .hover\:opacity-\[\.85\]:hover {
   opacity: .85;
@@ -1306,6 +1334,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:pt-14 {
